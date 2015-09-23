@@ -4,7 +4,7 @@ A tool for comparing android resource files similar to unix diff
 ## Usage
 
 ```
-danijoo > .\resdiff --help
+danijoo > java -jar resdiff.jar --help
 usage: resdiff [OPTIONS]... FILES
  -h,--help           Show this screen
  -t,--type <arg>     only compare this resource type (string, bool,
@@ -15,7 +15,7 @@ usage: resdiff [OPTIONS]... FILES
 ## Examples
 ### Table view
 ```
-danijoo > .\resdiff -y resourcefile1.xml resourcefile2.xml
+danijoo > java -jar resdiff.jar -y resourcefile1.xml resourcefile2.xml
 Found 9 differences (1 added, 2 removed).
 +-----------+--------------------------+-------------------------------+-----------------------------------+
 |    Type   |           Name           |              Left             |               Right               |
@@ -34,7 +34,7 @@ Found 9 differences (1 added, 2 removed).
 
 ### Normal view
 ```
-danijoo > .\resdiff resourcefile1.xml resourcefile2.xml
+danijoo > java -jar resdiff.jar resourcefile1.xml resourcefile2.xml
 Found 9 differences (1 added, 2 removed).
 <string name="not_matching_res">
 <	This resource is not matching
