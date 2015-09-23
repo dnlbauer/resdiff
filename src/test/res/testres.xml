@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="en">
+    <string name="matching_res">This resource is matching</string>
+    <string name="not_matching_res">This resource is not matching</string>
+
+    <bool name="matching_bool">true</bool>
+    <bool name="not_matching_bool">false</bool>
+
+    <integer name="matching_int">123</integer>
+    <integer name="not_matching_int">122</integer>
+
+    <color name="matching_color">#000000</color>
+    <color name="not_matching_color">#001230</color>
+
+    <dimen name="matching_dimen">12dp</dimen>
+    <dimen name="not_matching_dimen">1sp</dimen>
+
+    <string name="missing_string_res">This misses in the other file</string>
+
+    <string name="a_reference">@string/is_just_a_string</string>
+    <string name="a_reference_not_matching">@string/is_just_a_string</string>
+
+    <bool name="a_missing_boolean">true</bool>
+</resources>
