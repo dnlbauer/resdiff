@@ -7,6 +7,16 @@ apply plugin: 'application'
 sourceCompatibility = 1.6
 mainClassName = "net.headlezz.resdiff.ResdiffPackage"
 
+jar {
+    manifest {
+        attributes "Main-Class": "$mainClassName"
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
 buildscript {
     repositories {
         mavenCentral()
